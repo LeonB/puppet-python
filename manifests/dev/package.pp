@@ -1,10 +1,7 @@
-class python::package {
+class python::dev::package {
 
-    # Install python before this
-    Class['python'] -> Class['flexget::package']
-
-    package  { $python::packages:
-        ensure   => $python::ensure,
+    package  { $python::dev::packages:
+        ensure   => $python::dev::ensure,
         provider => 'pip',
     }
 

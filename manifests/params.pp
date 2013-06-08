@@ -14,12 +14,12 @@
 #
 class python::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['python', 'python-pip']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['python', 'python-pip']
+  }
 
-	$enabled = true
+  $enabled = true
 
 }

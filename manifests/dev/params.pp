@@ -12,14 +12,14 @@
 # This class is not intended to be used directly.
 # It may be imported or inherited by other classes
 #
-class python::params {
+class python::dev::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['python', 'python-pip']
-	}
+  $packages = $::operatingsystem ? {
+    default => []
+  }
 
-	$enabled = true
+  $enabled = true
 
 }

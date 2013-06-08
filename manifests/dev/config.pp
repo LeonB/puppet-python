@@ -1,3 +1,3 @@
-class python::config {
+class python::dev::config {
 
 }
